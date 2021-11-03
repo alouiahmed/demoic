@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>tn.esprit</groupId>
   <artifactId>DemoIC</artifactId>
-  <version>1.0.3</version>
+  <version>1.1.0</version>
   <name>DemoIC</name>
   <description>DemoIC</description>
   <properties>
@@ -23,6 +23,9 @@
 		<artifactId>gimap</artifactId>
 		<version>2.0.0</version>
 	</dependency>
+	
+
+
 
   </dependencies>
   <build>
@@ -54,10 +57,10 @@
           <artifactId>maven-install-plugin</artifactId>
           <version>2.5.2</version>
         </plugin>
-        <!--plugin>
+        <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
-        </plugin-->
+        </plugin>
         <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
@@ -74,11 +77,11 @@
 
   <distributionManagement>
     <snapshotRepository>
-      <id>nexus-snapshots</id>
+      <id>nexusdeploymentrepo</id>
       <url>http://localhost:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
 	<repository>
-	  <id>nexus-releases</id>
+	  <id>nexusdeploymentrepo</id>
       <url>http://localhost:8081/repository/maven-releases/</url>
     </repository>
   
